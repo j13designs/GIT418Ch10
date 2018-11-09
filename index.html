@@ -1,1 +1,12 @@
+<script>
+   
+         navigator.geolocation.getCurrentPosition(showLocation);
 
+        function showLocation(position) {
+          console.log("Longitude: " + position.coords.longitude);
+          console.log("Latitude: " + position.coords.latitude);
+
+          var result = document.getElementById("location");
+
+        }
+      </script>
