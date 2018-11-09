@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-       <!-- (Larissa J. Sykes) -->
-       <title>Geolocation</title>
-       <meta charset="utf-8">
-       <script src="modernizr.custom.05819.js"></script>
-    </head>
-    <body>
-    <header>
-    </header>
-    <main>
-    Ok, so now that you are here, go ahead and right-click your mouse on the page and choose "Inspect" if you're using Chrome or choose "Inspect Element" if you're using Firefox. Then select your console tab to see your coordinates. Thanks
-    </main>
-      <script>
+     <script>
         navigator.geolocation.getCurrentPosition(showLocation);
 
         function showLocation(position) {
@@ -20,14 +6,7 @@
           console.log("Latitude: " + position.coords.latitude);
 
           var result = document.getElementById("location");
-
-          result.innerHTML+=
-            "<strong>Latitude:</strong> " + position.coords.latitude
-            + "<br><strong>Longitude:</strong> " + position.coords.longitude
-          ;
         }
 
       </script>
-</body>
-</html
       
